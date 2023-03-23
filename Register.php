@@ -51,7 +51,7 @@ if (isset($_POST['register'])) {
       <div class="hero-form">
         <form class="form" action="" method="POST" name="singup-form">
         <label class="credentials">Inserisci il nome</label>
-          <input name="nome" class="input" type="text"  placeholder="Mario">
+          <input name="nome" class="input" type="text"  placeholder="Mario" pattern="[a-zA-Z0-9]+">
           <label class="credentials">Inserisci il cognome</label>
           <input name="cognome" class="input" type="text"  placeholder="Rossi">
           <label class="credentials">Inserisci l'e-mail</label>
@@ -61,7 +61,7 @@ if (isset($_POST['register'])) {
             <input name="password" class="input" type="password"  placeholder="Scrivila qui">
            <span><i class="fa-solid fa-eye" style="color: #0057ff;"></i></span> 
           </div>
-          <button type="submit" name="register" value="register" class="btn">ACCEDI</button>
+          <button type="submit" name="register" value="register">ACCEDI</button>
           <p class="profile">Hai già un account? <span class="span"><a href="">Accedi</a> </span></p>
         </form>
       </div>
